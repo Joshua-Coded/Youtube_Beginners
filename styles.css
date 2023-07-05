@@ -49,3 +49,16 @@ ul.topnav li a:hover {
     background-color: #0080ff;
     color: #fff;
 }
+
+ul.topnav li.dropDownMenu {
+    display: none;
+}
+
+
+/* ######## MOBILE STYLE */
+
+@media screen and (max-width: 680px) {
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }
+}
