@@ -9,7 +9,7 @@
 <body>
     <!-- navigation bar -->
     <nav>
-        <ul class="topnav">
+        <ul class="topnav" id="dropDownClick">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#news">News</a></li>
@@ -18,8 +18,22 @@
             <li class="topnav-right"><a href="#signup">Sign Up</a></li>
        
        <!-- hambugger menu -->
-            <li class="dropDownMenu"><a href="">&#9776;</a></li>
+            <li class="dropDownMenu"><a href="javascript:void(0);" onclick="dropDownIcon()">&#9776;</a></li>
                 </ul>
     </nav>
+
+
+    <script>
+function dropDownIcon() {
+    let x = document.getElementById("dropDownClick");
+    if(x.className == "topnav") {
+        x.className +=  " responsive";
+    }
+    else {
+        x.className = " topnav";
+    }
+}
+    </script>
+
 </body>
 </html>
